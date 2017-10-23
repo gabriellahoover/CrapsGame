@@ -32,7 +32,6 @@ public class CrapsGame {
 			sumOfRolls += roll;
 		}
 		
-		/* TODO */
 		
 		
 		
