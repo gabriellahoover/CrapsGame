@@ -23,8 +23,6 @@ public class CrapsGame {
 	 * @return
 	 */
 	private int rollDice(int numDice) {
-		Scanner input = new Scanner(System.in);
-		numDice = input.nextInt();
 		int i;
 		Random rand = new Random();
 		for (i = 0; i < numDice; i++) {
@@ -43,6 +41,13 @@ public class CrapsGame {
 	 * 
 	 */
 	public void play() {
+		int firstRoll = rollDice(2);
+		if (firstRoll == 7 || firstRoll == 11) {
+			System.out.println("You win");
+		}
+		if (firstRoll == 2 || firstRoll == 3 || firstRoll == 12) {
+			System.out.println("You lose");
+		}
 		
 		/* first roll */
 		
